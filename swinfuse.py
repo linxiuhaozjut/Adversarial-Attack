@@ -91,7 +91,7 @@ def run_demo(model, infrared_path, visible_path, output_path_root, index, f_type
 
 def swinfuse():
     # run demo
-    test_path = "/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/DE/"
+    test_path = "./infer/m3fd/DE/"
     # test_ir_path = "D:/Transformer  224Unet/imgs road sence/thermal/"
     # test_vis_path = "D:/Transformer  224Unet/imgs road sence/visual/"
     # test_ir_path = "D:/Transformer  224Unet/INO_TreesAndRunner/INO_TreesAndRunner_T/"
@@ -102,7 +102,7 @@ def swinfuse():
     network_type = 'SwinFuse'
     fusion_type = ['l1_mean']
 
-    output_path = '/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/runs/tmp/attacktarLLVIP/DE/images/'
+    output_path = './runs/tmp/attacktarLLVIP/DE/images/'
 
     # in_c = 3 for RGB imgs; in_c = 1 for gray imgs
     in_chans = 1
@@ -133,7 +133,7 @@ def swinfuse():
         #     run_demo(model, infrared_path, visible_path, output_path, index, f_type)
         #=============================================
         # 打开txt文件
-        file = open('/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/DE/meta/pred.txt', 'r')
+        file = open('./infer/m3fd/DE/meta/pred.txt', 'r')
         # 读取每一行数据并将其存储到data数组中
         data = []
         for line in file.readlines():
@@ -153,12 +153,12 @@ def swinfuse():
 
 def single_swinfuse(item):
     # run demo
-    test_path = "/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/single/"
+    test_path = "./infer/m3fd/single/"
 
     network_type = 'SwinFuse'
     fusion_type = ['l1_mean']
 
-    output_path = '/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/runs/tmp/attacktarLLVIP/infer/images/'
+    output_path = './runs/tmp/attacktarLLVIP/infer/images/'
 
     # in_c = 3 for RGB imgs; in_c = 1 for gray imgs
     in_chans = 1

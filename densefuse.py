@@ -11,7 +11,7 @@ def densefuse():
     model_path = Config.model_path_gray
     ir_path = Config.test_Inf_img
     vi_path = Config.test_Vis_img
-    save_dir = "/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/runs/tmp/attacktarLLVIP/DE/images"
+    save_dir = "./runs/tmp/attacktarLLVIP/DE/images"
     # 加载模型
 
     model = DenseFuse(Config.in_channel, Config.in_channel, fusion_strategy=Config.fusion_strategy)  # 这里需要你自行定义网络的参数
@@ -25,7 +25,7 @@ def densefuse():
     #vi_images = sorted(os.listdir(vi_path), key=lambda x: int(x.split('.')[0]))
     #=====================================
     # 打开txt文件
-    file = open('/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/DE/meta/pred.txt', 'r')
+    file = open('./infer/m3fd/DE/meta/pred.txt', 'r')
     # 读取每一行数据并将其存储到data数组中
     data = []
     for line in file.readlines():
@@ -60,7 +60,7 @@ def single_densefuse():
     model_path = Config.model_path_gray
     ir_path = Config.single_Inf_img
     vi_path = Config.single_Vis_img
-    save_dir = "/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/runs/tmp/attacktarLLVIP/infer/images"
+    save_dir = "./runs/tmp/attacktarLLVIP/infer/images"
     # 加载模型
 
     model = DenseFuse(Config.in_channel, Config.in_channel, fusion_strategy=Config.fusion_strategy)  # 这里需要你自行定义网络的参数
@@ -74,7 +74,7 @@ def single_densefuse():
     #vi_images = sorted(os.listdir(vi_path), key=lambda x: int(x.split('.')[0]))
     #=====================================
     # 打开txt文件
-    file = open('/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/single/meta/pred.txt', 'r')
+    file = open('./infer/m3fd/single/meta/pred.txt', 'r')
     # 读取每一行数据并将其存储到data数组中
     data = []
     for line in file.readlines():

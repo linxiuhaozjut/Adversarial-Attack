@@ -9,11 +9,11 @@ class Config():
         Vis_img="./data/RoadScene/vi"
         Inf_img="./data/RoadScene/ir"
 
-        test_Vis_img="/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/DE/vi"
-        test_Inf_img="/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/DE/ir"
+        test_Vis_img="./infer/m3fd/DE/vi"
+        test_Inf_img="./infer/m3fd/DE/ir"
 
-        single_Vis_img="/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/single/vi"
-        single_Inf_img="/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/infer/m3fd/single/ir"
+        single_Vis_img="./infer/m3fd/single/vi"
+        single_Inf_img="./infer/m3fd/single/ir"
         # HEIGHT = 256
         # WIDTH = 256
         HEIGHT = 1024
@@ -25,7 +25,7 @@ class Config():
         fusion_strategy='l1_norm'
         image_size = 256 #"size of training images, default is 256 X 256"
         cuda = 1 #"set it to 1 for running on GPU, 0 for CPU"
-        result = "/data/Newdisk2/linxiuhao/old_project/project/yolov3-master-tar-updata/runs/tmp/attacktarLLVIP/DE/images"
+        result = "./runs/tmp/attacktarLLVIP/DE/images"
         ssim_weights = [1, 10, 100, 1000]
     
 
